@@ -3,14 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C Weather</title>
+    <title>Weather</title>
+    <link rel="stylesheet" href="./stylesheet/style.CSS">
 </head>
 <body>
-    <section id="outerContainer">
-        <div id="searchContainer">
-            <input type="text" id="searchField" placeholder="Enter City Name">
-            <button>Press Me</button>
+    <h1>CWeather</h1>
+    <div class="container">
+        <div class="weather-input">
+            <h3>Enter a city name</h3>
+            <input type="text" placeholder="E.g., New york,Colombo,London">
+            <button class="search-btn">Search</button>
+            <div class="separator"></div>
+            <button class="location-btn">Use current location</button>
         </div>
-    </section>
+        <div class="weather-data">
+            <div class="current-weather">
+                <div class="details">
+                    <h2>London(2023-09-20)</h2>
+                    <h4>Temperature : 19.10C</h4>
+                    <h4>Wind : 4.31M/S</h4>
+                    <h4>Humidity : 79%</h4>
+                </div>
+                <div class="icon">
+                    <img src="http://openweathermap.org/img/wn/10d@4x.png" alt="weather-icon">
+                    <h4>Moderate Rain</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

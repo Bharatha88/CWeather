@@ -1,0 +1,71 @@
+body{
+    background-image: url(BckImg.jpg);
+  
+}
+
+h1{
+   margin-left: 18px; 
+   color: black;
+   padding: 30px 0;
+   text-align: left;
+   font-size: 2.75rem;
+}
+h3{
+    color: #060606;
+    font-size: 1.87rem;
+}
+.container{
+    display: flex;
+    gap: 35px;
+    padding: 30px;
+}
+.weather-input{
+    width: 440px;
+}
+.weather-input input{
+    width: 410px;
+    height: 46px;
+    outline: none;
+    padding: 0 17px;
+    margin: 10px 0 20px 0;
+    font-size: 1.07rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.weather-input .separator{
+    height: 1px;
+    width: 100%;
+    margin: 25px 0;
+    background: #242b4a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.weather-input .separator::before{
+    content: "or";
+    color: #5372f5;
+    font-size: 1.18rem;
+    padding: 0 15px;
+    margin-top: -4px;
+    background: #faf8f8;
+}
+.weather-input button{
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #ffff;
+    font-size: 1rem;
+    border-radius: 4px;
+    background: #5372f5;
+}
+.weather-input .location-btn{
+    background: #4e5fab;
+}
+.weather-dat{
+    width: 100%;
+}
+
+
+
