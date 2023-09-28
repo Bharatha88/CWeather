@@ -23,40 +23,13 @@
                 </ul>
             </nav>
         </div>
-        <div id='login-form'class='login-page'>
-            <!--creating the form box-->
-            <div class="form-box">
-                <div class='button-box'>
-                    <div id='btn'></div>
-                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
-                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
-                </div>
-                <!--Creating login form-->
-                <form id='login' class='input-group-login'>
-                    <input type='text'class='input-field'placeholder='Email Id' required >
-		    <input type='password'class='input-field'placeholder='Enter Password' required>
-		    <input type='checkbox'class='check-box'><span>Remember Password</span>
-		    <button type='submit'class='submit-btn'>Log in</button>
-		 </form>
-         <!--Creating register form-->
-		 <form id='register' class='input-group-register'>
-		     <input type='text'class='input-field'placeholder='First Name' required>
-		     <input type='text'class='input-field'placeholder='Last Name ' required>
-		     <input type='email'class='input-field'placeholder='Email Id' required>
-		     <input type='password'class='input-field'placeholder='Enter Password' required>
-		     <input type='password'class='input-field'placeholder='Confirm Password'  required>
-		     <input type='checkbox'class='check-box'><span>I agree to the terms and                                                   conditions</span>
-                    <button type='submit'class='submit-btn'>Register</button>
-	         </form>
-            </div>
-        </div>
-
+        
     </div>
     
     <div class="container">
         <div class="weather-input">
             <h3>Enter a city name</h3>
-            <input type="text" placeholder="E.g., New york,Colombo,London">
+            <input class="city-input" type="text" placeholder="E.g., New york,Colombo,London">
             <button class="search-btn">Search</button>
             <div class="separator"></div>
             <button class="location-btn">Use current location</button>
@@ -64,45 +37,40 @@
         <div class="weather-data">
             <div class="current-weather">
                 <div class="details">
-                    <h2>London(2023-09-20)</h2>
-                    <h4>Temperature : 19.10C</h4>
-                    <h4>Wind : 4.31M/S</h4>
-                    <h4>Humidity : 79%</h4>
+                        <h2>(________)</h2>   
+                        <h4>Temp:____°C</h4>
+                        <h4>Wind: ____ M/S</h4>
+                        <h4>Humidity:____%</h4>
                 </div>
-                <div class="icon">
-                    <img src="http://openweathermap.org/img/wn/10d@4x.png" alt="weather-icon">
-                    <h4>Moderate Rain</h4>
-                </div>
+                
             </div>
             <div class="days-forecast">
                 <h2>3-Days Forecast</h2>
                 <ul class="weather-cards">
                     <li class="card">
-                        <h3>(2023-06-19)</h3>   
-                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">  
-                        <h4>Temp: 19.10C</h4>
-                        <h4>Wind: 4.3 M/S</h4>
-                        <h4>Humidity: 79%</h4>
+                        <h3>(________)</h3>   
+                        <h4>Temp:____°C</h4>
+                        <h4>Wind: ____ M/S</h4>
+                        <h4>Humidity:____%</h4>
                      </li> 
                      <li class="card">
-                        <h3>(2023-06-19)</h3>    
-                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">  
-                        <h4>Temp: 19.10C</h4>
-                        <h4>Wind: 4.3 M/S</h4>
-                        <h4>Humidity: 79%</h4>
+                        <h3>(________)</h3>   
+                        <h4>Temp:____°C</h4>
+                        <h4>Wind: ____ M/S</h4>
+                        <h4>Humidity:____%</h4>
                      </li> 
                      <li class="card">
-                        <h3>(2023-06-19)</h3>     
-                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">  
-                        <h4>Temp: 19.10C</h4>
-                        <h4>Wind: 4.3 M/S</h4>
-                        <h4>Humidity: 79%</h4>
+                        <h3>(________)</h3>   
+                        <h4>Temp:____°C</h4>
+                        <h4>Wind: ____ M/S</h4>
+                        <h4>Humidity:____%</h4>
                      </li>
                 </ul>
             </div>
         </div>
     </div>
-    <!--<script>
+    <!--
+    <script>
         var x=document.getElementById('login');
 		var y=document.getElementById('register');
 		var z=document.getElementById('btn');
@@ -123,12 +91,12 @@
         var modal = document.getElementById('login-form');
         window.onclick = function(event) 
         {
-            if (event.target == modal) 
+            if (event.target === modal)
             {
                 modal.style.display = "none";
             }
         }
     </script>-->
-    <script src="scripts/script.js"></script>
+    <script src="scripts/script.js" defer></script>
 </body>
 </html>
