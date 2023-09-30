@@ -5,35 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
     <link rel="stylesheet" href="./stylesheet/style.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="full-page">
         <!--Creating a navigation bar-->
         <div class="navbar">
             <div>
-                <a href='website.html'>CWeather</a>
+                <a href='website.html'>Cweather</a>
             </div>
             <nav>
                 <ul id="MenuItems">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Service</a></li>
+                    <li><a href="#">News</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Pricing</a></li>
                     <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='black'"style="width:auto;">Login</button></li>
                 </ul>
             </nav>
         </div>
         
     </div>
-    
+    <!--Creating container html-->
     <div class="container">
         <div class="weather-input">
             <h3>Enter a city name</h3>
             <input class="city-input" type="text" placeholder="E.g., New york,Colombo,London">
             <button class="search-btn">Search</button>
             <div class="separator"></div>
-            <button class="location-btn">Use current location</button>
+            <button class="location-btn">Use current location</button><br>
+            <div class="container2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506984.4345358051!2d79.51572443618237!3d6.9126037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2596ec416915f%3A0x665df8723d642688!2sColombo%20Public%20Library!5e0!3m2!1sen!2slk!4v1696037380852!5m2!1sen!2slk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>           
         </div>
+
+       
+        
         <div class="weather-data">
             <div class="current-weather">
                 <div class="details">
@@ -44,8 +51,9 @@
                 </div>
                 
             </div>
+            <!--creating 3 days forecast-->
             <div class="days-forecast">
-                <h2>3-Days Forecast</h2>
+                <h2>Future Forecast</h2>
                 <ul class="weather-cards">
                     <li class="card">
                         <h3>(________)</h3>   
@@ -69,7 +77,60 @@
             </div>
         </div>
     </div>
-    <!--
+   <!--creating the form box-->
+    <div id='login-form' class='login-page'>
+        
+        <div class="form-box">
+            <div class='button-box'>
+                <div id='btn'></div>
+                <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+            </div>
+            <!--Creating login form-->
+            <form id='login' class='input-group-login'>
+                <input type='text'class='input-field'placeholder='Email Id' required >
+                <input type='password'class='input-field'placeholder='Enter Password' required>
+                <input type='checkbox'class='check-box'><span>Remember Password</span>
+                <button type='submit'class='submit-btn'>Log in</button>
+            </form>
+            <!--Creating register form-->
+            <form id='register' class='input-group-register'>
+                <input type='text'class='input-field'placeholder='First Name' required>
+                <input type='text'class='input-field'placeholder='Last Name ' required>
+                <input type='email'class='input-field'placeholder='Email Id' required>
+                <input type='password'class='input-field'placeholder='Enter Password' required>
+                <input type='password'class='input-field'placeholder='Confirm Password'  required>
+                <input type='checkbox'class='check-box'><span>I agree to the terms and                                                   conditions</span>
+                <button type='submit'class='submit-btn'>Register</button>
+            </form>
+        </div>
+    </div>
+    <!--creating footer container-->
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Our Team</a></li>
+                </ul>
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy;2023; Designed by <span class="Designer"></span>IZY</p>
+    
+            </div>
+        </div>
+    </footer>
+    <!--script for the login button and register button-->
     <script>
         var x=document.getElementById('login');
 		var y=document.getElementById('register');
@@ -96,7 +157,7 @@
                 modal.style.display = "none";
             }
         }
-    </script>-->
+    </script>
     <script src="scripts/script.js" defer></script>
 </body>
 </html>

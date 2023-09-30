@@ -1,6 +1,7 @@
+/*Body design*/
 body{
     background-image: url(Wth.jpg);
-  
+/*Navbar style*/  
 }
 .navbar{
     display: flex;
@@ -22,45 +23,50 @@ nav ul li{
     display: inline-block;
     margin-right: 70px;
 }
+/*Home,contact,news,pricing style*/
 nav ul li a{
     text-decoration: none;
     font-size: 28px;
-    color: rgb(247, 86, 86);
+    color: rgb(244, 7, 7);
     font-family: sans-serif;
 }
+/*Login Button style*/
 nav ul li button{
     font-size: 30px;
-    color: rgb(249, 249, 249);
+    color: rgb(43, 2, 93);
     outline: none;
     border: none;
     background: transparent;
     cursor: pointer;
     font-family: sans-serif;
 }
+/*Hover style*/
 nav ul li button:hover{
     color: aqua;
 }
 nav ul li a:hover{
     color: aqua;
 }
+/*Cweather style*/
 a{
     text-decoration: none;
-    color:palevioletred;
-    font-size: 48px;
+    color:rgb(241, 2, 82);
+    font-size: 75px;
 }
-
 
 h1{
    margin-left: 18px; 
-   color: black;
+   color: rgb(182, 8, 8);
    padding: 30px 0;
    text-align: left;
-   font-size: 2.75rem;
+   font-size: 3.75rem;
 }
+/*Enter city name style*/
 h3{
     color: #060606;
     font-size: 1.87rem;
 }
+/*container style*/
 .container{
     display: flex;
     gap: 35px;
@@ -68,6 +74,7 @@ h3{
 }
 .weather-input{
     width: 440px;
+    height: 340px;
 }
 .weather-input input{
     width: 410px;
@@ -129,6 +136,9 @@ h3{
     font-size: 1rem;
     font-weight: 500;
 }
+.current-weather .icon{
+    text-align: center;
+}
 .current-weather .icon img{
     max-width: 120px;
     margin-top: -15px;
@@ -161,26 +171,117 @@ h3{
     max-width: 70px;
     margin: 5px 0 -12px 0;
 }
-#login-form
+
+/*footer container*/
+footer{
+    background-color: #060606;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 12px;
+    background-color: #ccc;
+    margin: 8px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 1em;
+    color: blue;
+    opacity: 0.5s;
+}
+/*hoover effect for the social media icon*/
+.socialIcons a:hover{
+    background-color: #080808;
+    transition: 0.5s;
+}
+.socialIcons a:hover{
+    color: white;
+    transition: 0.4s;
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: nonedisc;
+}
+.footerNav ul li a{
+    color: rgb(229, 11, 11);
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+    font-weight: bold;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-decoration: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: 0px 5px;
+}
+@media(max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+/*Login button container*/
+.login-form
 {
     display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background:rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+    height: 100%;
+    gap: 65px;
 }
 .form-box
 {
     width:380px;
 	height:480px;
 	position:relative;
-	margin:2% auto;
-	background:rgba(0,0,0,0.3);
+    background-color: rgb(119, 178, 241);
+    border-radius: 2px;
+	margin:4% auto;
 	padding:10px;
     overflow: hidden;
+   
 }
 .button-box
 {
 	width:220px;
 	margin:35px auto;
 	position:relative;
-	box-shadow: 0 0 20px 9px #ff61241f;
+	box-shadow: 0 0 20px 9px #f2ad921f;
 	border-radius: 30px;
 }
 .toggle-btn
@@ -270,6 +371,15 @@ span
 	color:white;
 	font-size: 15;
 }
-
+/*google map style*/
+.container2{
+    width: 420px;
+    height: 230px;
+    display: flex;
+    gap: 35px;
+    padding: 25px;
+    
+    
+}
 
 
